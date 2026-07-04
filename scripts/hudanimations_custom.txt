@@ -103,6 +103,9 @@ event HideHudElements
 	Animate HudHintKeyDisplay		Alpha	"0"		Linear 0.0 0.0
 	Animate HudAlert				Alpha	"0"		Linear 0.0 0.0
 	Animate CTFStreakNotice			Alpha	"0"		Linear 0.0 0.0
+	Animate WinPanel				Alpha	"0"		Linear 0.0 0.0
+	Animate ArenaWinPanel			Alpha	"0"		Linear 0.0 0.0
+	Animate HudStalemate			Alpha	"0"		Linear 0.0 0.0
 	Animate HudScopeCharge			Alpha	"0"		Linear 0.0 0.0
 	Animate HudWeapon				Alpha	"0"		Linear 0.0 0.0
 	Animate MatchMakingContainer	Alpha	"0"		Linear 0.0 0.0
@@ -147,6 +150,9 @@ event ShowHudElements
 	Animate HudHintKeyDisplay		Alpha	"255"	Linear 0.0 0.0
 	Animate HudAlert				Alpha	"255"	Linear 0.0 0.0
 	Animate CTFStreakNotice			Alpha	"255"	Linear 0.0 0.0
+	Animate WinPanel				Alpha	"255"	Linear 0.0 0.0
+	Animate ArenaWinPanel			Alpha	"255"	Linear 0.0 0.0
+	Animate HudStalemate			Alpha	"255"	Linear 0.0 0.0
 	Animate HudScopeCharge			Alpha	"255"	Linear 0.0 0.0
 	Animate HudWeapon				Alpha	"255"	Linear 0.0 0.0
 	Animate MatchMakingContainer	Alpha	"255"	Linear 0.0 0.0
