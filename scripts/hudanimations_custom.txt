@@ -64,3 +64,80 @@ event HudTournamentSetupPanelClose
 event CompetitiveGame_LowerChatWindow { }
 event CompetitiveGame_RestoreChatWindow { }
 event HudTournament_MoveChatWindow { }
+//==================================================================================
+
+// HUD element toggle for clean recording (fire with: testhudanim HideHudElements)
+// Damage numbers (CDamageAccountPanel) are intentionally left untouched.
+event HideHudElements
+{
+	Animate HudPlayerStatus			Alpha	"0"		Linear 0.0 0.0
+	Animate HudWeaponAmmo			Alpha	"0"		Linear 0.0 0.0
+	Animate HudWeaponSelection		Alpha	"0"		Linear 0.0 0.0
+	Animate HudMedicCharge			Alpha	"0"		Linear 0.0 0.0
+	Animate HudDemomanCharge		Alpha	"0"		Linear 0.0 0.0
+	Animate HudDemomanPipes			Alpha	"0"		Linear 0.0 0.0
+	Animate HudItemEffectMeter		Alpha	"0"		Linear 0.0 0.0
+	Animate HudBowCharge			Alpha	"0"		Linear 0.0 0.0
+	Animate HudFlameRocketCharge	Alpha	"0"		Linear 0.0 0.0
+	Animate CHudAccountPanel		Alpha	"0"		Linear 0.0 0.0
+	Animate CHealthAccountPanel		Alpha	"0"		Linear 0.0 0.0
+	Animate CMainTargetID			Alpha	"0"		Linear 0.0 0.0
+	Animate CSecondaryTargetID		Alpha	"0"		Linear 0.0 0.0
+	Animate CSpectatorTargetID		Alpha	"0"		Linear 0.0 0.0
+	Animate HudDeathNotice			Alpha	"0"		Linear 0.0 0.0
+	Animate HudObjectiveStatus		Alpha	"0"		Linear 0.0 0.0
+	Animate HudRoundTimer			Alpha	"0"		Linear 0.0 0.0
+	Animate HudKothTimeStatus		Alpha	"0"		Linear 0.0 0.0
+	Animate HudMatchStatus			Alpha	"0"		Linear 0.0 0.0
+	Animate HudTournament			Alpha	"0"		Linear 0.0 0.0
+	Animate HudStopWatch			Alpha	"0"		Linear 0.0 0.0
+	Animate HudControlPointIcons	Alpha	"0"		Linear 0.0 0.0
+	Animate HudCapturePanel			Alpha	"0"		Linear 0.0 0.0
+	Animate HudChat					Alpha	"0"		Linear 0.0 0.0
+	Animate HudVoiceStatus			Alpha	"0"		Linear 0.0 0.0
+	Animate HudVoiceSelfStatus		Alpha	"0"		Linear 0.0 0.0
+	Animate HudSpectatorExtras		Alpha	"0"		Linear 0.0 0.0
+	Animate DisguiseStatus			Alpha	"0"		Linear 0.0 0.0
+	Animate HudCrosshair			Alpha	"0"		Linear 0.0 0.0
+	Animate HudHintDisplay			Alpha	"0"		Linear 0.0 0.0
+	Animate HudHintKeyDisplay		Alpha	"0"		Linear 0.0 0.0
+	Animate HudAlert				Alpha	"0"		Linear 0.0 0.0
+	Animate CTFStreakNotice			Alpha	"0"		Linear 0.0 0.0
+}
+
+event ShowHudElements
+{
+	Animate HudPlayerStatus			Alpha	"255"	Linear 0.0 0.0
+	Animate HudWeaponAmmo			Alpha	"255"	Linear 0.0 0.0
+	Animate HudWeaponSelection		Alpha	"255"	Linear 0.0 0.0
+	Animate HudMedicCharge			Alpha	"255"	Linear 0.0 0.0
+	Animate HudDemomanCharge		Alpha	"255"	Linear 0.0 0.0
+	Animate HudDemomanPipes			Alpha	"255"	Linear 0.0 0.0
+	Animate HudItemEffectMeter		Alpha	"255"	Linear 0.0 0.0
+	Animate HudBowCharge			Alpha	"255"	Linear 0.0 0.0
+	Animate HudFlameRocketCharge	Alpha	"255"	Linear 0.0 0.0
+	Animate CHudAccountPanel		Alpha	"255"	Linear 0.0 0.0
+	Animate CHealthAccountPanel		Alpha	"255"	Linear 0.0 0.0
+	Animate CMainTargetID			Alpha	"255"	Linear 0.0 0.0
+	Animate CSecondaryTargetID		Alpha	"255"	Linear 0.0 0.0
+	Animate CSpectatorTargetID		Alpha	"255"	Linear 0.0 0.0
+	Animate HudDeathNotice			Alpha	"255"	Linear 0.0 0.0
+	Animate HudObjectiveStatus		Alpha	"255"	Linear 0.0 0.0
+	Animate HudRoundTimer			Alpha	"255"	Linear 0.0 0.0
+	Animate HudKothTimeStatus		Alpha	"255"	Linear 0.0 0.0
+	Animate HudMatchStatus			Alpha	"255"	Linear 0.0 0.0
+	Animate HudTournament			Alpha	"255"	Linear 0.0 0.0
+	Animate HudStopWatch			Alpha	"255"	Linear 0.0 0.0
+	Animate HudControlPointIcons	Alpha	"255"	Linear 0.0 0.0
+	Animate HudCapturePanel			Alpha	"255"	Linear 0.0 0.0
+	Animate HudChat					Alpha	"255"	Linear 0.0 0.0
+	Animate HudVoiceStatus			Alpha	"255"	Linear 0.0 0.0
+	Animate HudVoiceSelfStatus		Alpha	"255"	Linear 0.0 0.0
+	Animate HudSpectatorExtras		Alpha	"255"	Linear 0.0 0.0
+	Animate DisguiseStatus			Alpha	"255"	Linear 0.0 0.0
+	Animate HudCrosshair			Alpha	"255"	Linear 0.0 0.0
+	Animate HudHintDisplay			Alpha	"255"	Linear 0.0 0.0
+	Animate HudHintKeyDisplay		Alpha	"255"	Linear 0.0 0.0
+	Animate HudAlert				Alpha	"255"	Linear 0.0 0.0
+	Animate CTFStreakNotice			Alpha	"255"	Linear 0.0 0.0
+}
